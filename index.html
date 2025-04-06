@@ -67,9 +67,9 @@
           <button class="bg-[#5DADEC] text-white py-3 px-6 rounded-md font-bold">Let's Talk</button>
           <div class="mt-6 flex items-center gap-4">
             <span>Check out My:</span>
-            <a href="https://www.instagram.com/tejas7.0"><img src="src/icons/instagram.svg" class="w-6 h-6"></a>
-            <a href="https://www.linkedin.com/in/tejasmundhe"><img src="src/icons/linkedIn.svg" class="w-6 h-6"></a>
-            <a href="#"><img src="src/icons/twitter.svg" class="w-6 h-6"></a>
+            <a href="https://www.instagram.com/tejas7.0" target="_blank"><img src="src/icons/instagram.svg" class="w-6 h-6"></a>
+            <a href="https://www.linkedin.com/in/tejasmundhe" target="_blank"><img src="src/icons/linkedIn.svg" class="w-6 h-6"></a>
+            <a href="https://x.com/TejasMundhe32" target="_blank"><img src="src/icons/twitter.svg" class="w-6 h-6"></a>
           </div>
         </div>
         <div class="md:w-1/2">
@@ -78,7 +78,118 @@
       </div>
     </section>
 
-    <!-- Add remaining sections like Services, Projects, Reviews, Footer here -->
+        <!-- service section -->
+        <section class="max-w-7xl mx-auto px-5 my-6 text-white" id="Services">
+          <div class="text-center">
+            <p class="mb-3 font-montserrat font-medium"></p>
+            <h3 class="text-primary text-3xl font-bold mb-16">What I Do</h3>
+          </div>
+          <!-- service cards -->
+          <div
+            class="my-16 flex flex-col md:flex-row justify-around items-center gap-12"
+          >
+            <div
+              class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+            >
+              <img
+                src="src/img/graphic-design.svg"
+                alt=""
+                class="w-[196px] mb-12 mx-auto"
+              />
+              <h5 class="text-center my-5 text-xl">Web Developer</h5>
+              <p class="text-justify">
+                <!-- Info about web dev -->
+              </p>
+            </div>
+            <div
+              class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+            >
+              <img
+                src="src/img/graphic-design.svg"
+                alt=""
+                class="w-[196px] mb-12 mx-auto"
+              />
+              <h5 class="text-center my-5 text-xl">Java</h5>
+              <p class="text-justify">
+                <!-- Info about Java -->
+              </p>
+            </div>
+            <div
+              class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+            >
+              <img
+                src="src/img/graphic-design.svg"
+                alt=""
+                class="w-[196px] mb-12 mx-auto"
+              />
+              <h5 class="text-center my-5 text-xl">Cloud</h5>
+              <p class="text-justify">
+                <!-- Info about Cloud -->
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+            <!-- projects -->
+    <section class="px-5 my-32 mx-auto max-w-7xl" id="projects">
+      <div class="text-center text-white">
+        <h3 class="text-3xl font-bold mb-5">
+          Recent <span class="text-primary">Projects</span>
+        </h3>
+        <p class="mb-6 md:w-3/4 mx-auto">
+          I bring a passion for creating user-friendly experiences and a drive
+          design trends and technologies to deliver top-notch designs that meet
+          needs and exceed their expectations
+        </p>
+      </div>
+      <div
+        class="flex md:flex-row flex-col items-center justify-between gap-8 my-20"
+      >
+        <div
+          class="border border-primary shadow-xl shadow-[#5dadec3b] md:w-[741px] md:h-96 mx-auto rounded-2xl p-5 md:p-0"
+        >
+          <img src="src/img/project-1.svg" alt="" class="p-5 w-full" />
+        </div>
+        <div
+          class="border border-primary shadow-xl shadow-[#5dadec3b] md:w-[741px] md:h-96 mx-auto rounded-2xl p-5"
+        >
+          <img src="src/img/project-2.svg" alt="" class="w-full p-5" />
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="max-w-7xl mx-auto px-5 my-16">
+      <h4 class="text-2xl text-white pt-12 mb-12">Portfolio</h4>
+      <div class="text-white md:ml-16 flex flex-col md:flex-row justify-between md:items-center gap-6">
+        <div class="md:w-1/3 md:pl-10">
+          <h5 class="mb-3">Company</h5>
+          <a href="#" class="block my-2 text-sm text-slate-300">About Us</a>
+          <a href="#" class="block my-2 text-sm text-slate-300">Why Choose me</a>
+          <a href="#" class="block my-2 text-sm text-slate-300">Pricing</a>
+          <a href="#" class="block my-2 text-sm text-slate-300">Testimonial</a>
+        </div>
+
+        <div class="md:w-1/3">
+          <h5 class="mb-3">Resources</h5>
+          <a href="#" class="block my-2 text-sm text-slate-300">Privacy Policy</a>
+          <a href="#" class="block my-2 text-sm text-slate-300">Terms and Condition</a>
+          <a href="#" class="block my-2 text-sm text-slate-300">Blog</a>
+          <a href="#" class="block my-2 text-sm text-slate-300">Contact Us</a>
+        </div>
+
+        <div class="md:w-1/3">
+          <h5 class="mb-5">Subscribe to our Newsletter</h5>
+          <div class="relative">
+            <input type="email" name="email" id="email" placeholder="Enter your Email" class="bg-[#2B2E3C] py-5 pl-5 rounded-lg"> 
+            <input type="submit" value="Subscribe" class="bg-primary py-4 px-8 rounded-lg absolute left-44 top-1">
+          </div>
+        </div>
+
+      </div>
+  </footer>
+        
 
     <!-- Scripts -->
     <script>
