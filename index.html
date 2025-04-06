@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --primary: #5DADEC;
+        --dark: #2C2C2C;
+        --bg: #F4F4F4;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 5px;
+      }
+      .swiper-pagination-bullet {
+        background: var(--primary) !important;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-gray-900 py-4">
+      <nav class="max-w-7xl mx-auto px-5 flex justify-between items-center">
+        <a href="#" class="flex items-center gap-3 text-white font-bold text-lg">
+          <img src="src/img/Logo.svg" alt="Logo" class="w-8 h-8"> Portfolio
+        </a>
+        <div class="hidden md:flex gap-8">
+          <a href="#home" class="hover:text-gray-400">Home</a>
+          <a href="#projects" class="hover:text-gray-400">Projects</a>
+          <a href="https://drive.google.com/file/d/1xrqqPsga-k6JwzhUzT20J4jy3vIfWD4W/view?usp=sharing" class="hover:text-gray-400" target="_blank">Resume</a>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden text-2xl">
+          <i class='bx bx-menu'></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="md:hidden hidden bg-gray-800 px-5 pt-4 pb-2">
+        <a href="#home" class="block py-2 hover:bg-gray-700">Home</a>
+        <a href="#projects" class="block py-2 hover:bg-gray-700">Projects</a>
+        <a href="#resume" class="block py-2 hover:bg-gray-700">Resume</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 max-w-7xl mx-auto px-5">
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+          <p class="text-xl mb-2">Hello, <span class="text-[#5DADEC]">I'm</span></p>
+          <h1 class="text-4xl font-bold mb-4">Tejas Mundhe</h1>
+          <h2 class="text-2xl mb-4">Java Dev & Web Dev</h2>
+          <p class="mb-6 leading-relaxed md:w-3/4">
+            I am committed to finding innovative solutions and continuously experimenting to help my clients achieve their goals.
+          </p>
+          <button class="bg-[#5DADEC] text-white py-3 px-6 rounded-md font-bold">Let's Talk</button>
+          <div class="mt-6 flex items-center gap-4">
+            <span>Check out My:</span>
+            <a href="https://www.instagram.com/tejas7.0"><img src="src/icons/instagram.svg" class="w-6 h-6"></a>
+            <a href="https://www.linkedin.com/in/tejasmundhe"><img src="src/icons/linkedIn.svg" class="w-6 h-6"></a>
+            <a href="#"><img src="src/icons/twitter.svg" class="w-6 h-6"></a>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img src="src/img/Tejas_1.png" alt="Tejas" class="w-full md:ml-20" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Add remaining sections like Services, Projects, Reviews, Footer here -->
+
+    <!-- Scripts -->
+    <script>
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <script src="src/app.js"></script>
+    <script src="src/review.js"></script>
+  </body>
+</html>
